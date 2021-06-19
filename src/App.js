@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Button from "./components/Button";
 import Input from "./components/Input";
 import ClearButton from "./components/ClearButton";
-import math from "mathjs";
+import * as math from "mathjs";
 
 function App() {
 

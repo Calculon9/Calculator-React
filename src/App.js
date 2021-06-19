@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Button from "./components/Button";
 import Input from "./components/Input";
 import ClearButton from "./components/ClearButton";
-import * as math from "mathjs";
+import math from "mathjs";
 
 function App() {
 
@@ -29,7 +29,6 @@ function App() {
   // onClick callback if '=' clicked
   const handleEqual = () => {
     let formula = (input.input).toString();
-    console.log(formula)
     let filtered = formula.match(/(\*|\+|\/|-)?(\.|\-)?\d+/g).join('');
     setInput({ input: math.evaluate(filtered) });
   };
